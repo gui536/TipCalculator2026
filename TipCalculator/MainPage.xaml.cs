@@ -22,6 +22,9 @@ namespace TipCalculator
                 double gorjeta = refeicao * (porcentagem / 100);
                 double valorTotal = refeicao + gorjeta;
                 double valorPorPessoa = valorTotal / qtdPessoas;
+                
+                Calculadora calculadora = new Calculadora();
+                calculadora.DividirPorPessoa();
 
                 GorjetaEntry.Text = gorjeta.ToString("C");
                 ValorPorPessoaEntry.Text = valorPorPessoa.ToString("C");
